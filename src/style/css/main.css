@@ -1,0 +1,41 @@
+@import "/src/style/scss/_mixins.scss";
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0 auto;
+}
+
+
+.row {
+    padding: 10px;
+}
+
+
+.col {
+    float: left;
+    width: 25%;
+    padding: 10px;
+    min-width: 230px;
+    max-width: min-content;
+  }
+  
+  @media screen and (max-width: 768p) {
+    .col {
+      width: 50%;
+    }
+  }
+  
+  @media screen and (max-width: 320px) {
+    .col {
+      width: 100%;
+    }
+  }
+
+
+.text-holder {
+    border: 1px solid;
+    padding: 15px;
+}

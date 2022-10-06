@@ -1,0 +1,34 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0 auto;
+}
+
+.row {
+    padding: 40px;
+
+    @include media('>=768px') {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .col {
+        padding: 0 15px 30px;
+
+        @include media('>=768px') {
+            width: 50%;
+        }
+
+        @include media('>=1024px') {
+            width: calc(100% / 3);
+        }
+    }
+}
+
+
+.text-holder {
+    border: 1px solid;
+    padding: 15px;
+}
